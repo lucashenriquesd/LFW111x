@@ -9,7 +9,7 @@ services:
       - "3000:3000"
     working_dir: /var/www/LFW111x
     volumes:
-      - ./static/:/var/www/LFW111x
+      - ./:/var/www/LFW111x
     networks:
       - lfw111x-network
 
