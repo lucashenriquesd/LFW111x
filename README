@@ -1,0 +1,10 @@
+Open two terminals inside the node container.
+On the first terminal:
+- cd mock-srv
+- npm install
+- npm install fastify-cors
+- cd ..
+- serve static
+On the second terminal:
+- cd mock-srv
+- npm run dev -- --port 3001
