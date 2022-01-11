@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+
+  lfw111x-node15:
+    container_name: lfw111x-node15
+    build: node/
+    tty: true
+    ports:
+      - "3000:3000"
+    working_dir: /var/www/LFW111x
+    volumes:
+      - ./static/:/var/www/LFW111x
+    networks:
+      - lfw111x-network
+
+networks:
+  lfw111x-network:
+    driver: bridge
