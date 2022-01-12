@@ -3,7 +3,8 @@ const API = 'http://localhost:3001'
 const populateProducts = async (category) => {
   const products = document.querySelector('#products')
   products.innerHTML = ''
-  const res = await fetch(`${API}/${category.value}`)
+  const url = `${API}/${category}`
+  const res = await fetch(url)
   const data = await res.json()
   for (const product of data) {
     const item = document.createElement('product-item')
