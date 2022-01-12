@@ -3,6 +3,7 @@ On the first terminal:
 - cd mock-srv
 - npm install
 - npm install fastify-cors
+- npm install fastify-websocket@3
 - cd ..
 - serve static
 On the second terminal:
