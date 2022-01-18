@@ -5,6 +5,11 @@ On the first terminal:
 - npm install fastify-cors
 - npm install fastify-websocket@3
 - cd ..
+- cd my-cli
+- npm install got@11
+- npm install minimist
+- npm link
+- cd ..
 - serve static
 On the second terminal:
 - cd mock-srv
